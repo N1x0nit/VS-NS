@@ -20,17 +20,19 @@
                     <th>Фактическое</th>
                     <th>Прогноз</th>
                     <th>Предыдущее</th>
+                    <th>Важность</th>
                 </tr>
             </thead>
             <tbody>
                 {% for item in calendar_data %}
                 <tr>
-                    <td>{{ item.time }}</td>
-                    <td>{{ item.currency }}</td>
-                    <td>{{ item.event }}</td>
-                    <td>{{ item.actual }}</td>
-                    <td>{{ item.forecast }}</td>
-                    <td>{{ item.previous }}</td>
+                    <td>{{ event.time }}</td>
+                    <td>{{ event.currency }}</td>
+                    <td>{{ event.event }}</td>
+                    <td>{{ event.actual }}</td>
+                    <td>{{ event.forecast }}</td>
+                    <td>{{ event.previous }}</td>
+                    <td>{{ event.importance }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
