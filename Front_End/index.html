@@ -5,44 +5,42 @@
     <!-- Влад
      
     -->
-    <link rel="stylesheet" href="Front_End\style.css">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-        <h1>Экономический календарь</h1>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Время</th>
-                    <th>Валюта</th>
-                    <th>Событие</th>
-                    <th>Фактическое</th>
-                    <th>Прогноз</th>
-                    <th>Предыдущее</th>
-                    <th>Важность</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% if calendar_data %}
-                {% for event in calendar_data %}
-                    <tr>
-                        <td>{{ event.time }}</td>
-                        <td>{{ event.currency }}</td>
-                        <td>{{ event.event }}</td>
-                        <td>{{ event.actual }}</td>
-                        <td>{{ event.forecast }}</td>
-                        <td>{{ event.previous }}</td>
-                        <td>{{ event.importance }}</td>
-                    </tr>
-                {% endfor %}
-            {% else %}
-                <tr>
-                    <td colspan="7">Нет доступных данных</td>
-                </tr>
-            {% endif %}
-        </tbody>
-    </table>
+
+    <header>
+        <div class="logo">
+            <img src="/placeholder.svg?height=50&width=50" alt="Логотип">
+            <span>CurrencyNews</span>
+        </div>
+        <nav>
+            <ul class="Menu-items">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#support">Поддержка</a></li>
+                <li><a href="#social">Соц сети</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <h1>Поиск новостей по валюте</h1>
+            <form id="search-form">
+                <input type="text" id="currency-search" placeholder="Введите название валюты (например, USD)">
+                <button type="submit">Поиск</button>
+            </form>
+        </div>
+        <div id="search-results">
+            <!-- Результаты поиска будут отображаться здесь -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 CurrencyNews. Все права защищены.</p>
+    </footer>
     <script src="script.js"></script>
+
 </body>
 </html>
