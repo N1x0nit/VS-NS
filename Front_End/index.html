@@ -11,7 +11,7 @@
 </head>
 <body>
         <h1>Экономический календарь</h1>
-        <table>
+        <table border="1">
             <thead>
                 <tr>
                     <th>Время</th>
@@ -24,19 +24,25 @@
                 </tr>
             </thead>
             <tbody>
-                {% for item in calendar_data %}
-                <tr>
-                    <td>{{ event.time }}</td>
-                    <td>{{ event.currency }}</td>
-                    <td>{{ event.event }}</td>
-                    <td>{{ event.actual }}</td>
-                    <td>{{ event.forecast }}</td>
-                    <td>{{ event.previous }}</td>
-                    <td>{{ event.importance }}</td>
-                </tr>
+                {% if calendar_data %}
+                {% for event in calendar_data %}
+                    <tr>
+                        <td>{{ event.time }}</td>
+                        <td>{{ event.currency }}</td>
+                        <td>{{ event.event }}</td>
+                        <td>{{ event.actual }}</td>
+                        <td>{{ event.forecast }}</td>
+                        <td>{{ event.previous }}</td>
+                        <td>{{ event.importance }}</td>
+                    </tr>
                 {% endfor %}
-            </tbody>
-        </table>
+            {% else %}
+                <tr>
+                    <td colspan="7">Нет доступных данных</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
     <script src="script.js"></script>
 </body>
 </html>

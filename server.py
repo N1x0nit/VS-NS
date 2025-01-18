@@ -27,7 +27,7 @@ def get_economic_calendar():
             forecast = row.find("td", class_="fore").text.strip() if row.find("td", class_="fore") else "N/A"
             previous = row.find("td", class_="prev").text.strip() if row.find("td", class_="prev") else "N/A"
 
-            importance_tag = row.find("id", class_="textNum sentiment noWarp")
+            importance_tag = row.find("td", class_="textNum sentiment noWrap")
             importance = importance_tag['title'] if importance_tag else "Не указано"
 
             calendar_data.append({
@@ -41,7 +41,7 @@ def get_economic_calendar():
             })
         except AttributeError:
             continue
-
+        
     return calendar_data
 
 @app.route("/")
