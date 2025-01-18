@@ -9,13 +9,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <!-- Влад 
-     
-    
-    
-    
-    
-    -->
+<body>
+        <h1>Экономический календарь</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Время</th>
+                    <th>Валюта</th>
+                    <th>Событие</th>
+                    <th>Фактическое</th>
+                    <th>Прогноз</th>
+                    <th>Предыдущее</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in calendar_data %}
+                <tr>
+                    <td>{{ item.time }}</td>
+                    <td>{{ item.currency }}</td>
+                    <td>{{ item.event }}</td>
+                    <td>{{ item.actual }}</td>
+                    <td>{{ item.forecast }}</td>
+                    <td>{{ item.previous }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     <script src="script.js"></script>
 </body>
 </html>
