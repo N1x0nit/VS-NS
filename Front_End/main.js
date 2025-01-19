@@ -7,6 +7,7 @@ function updateTime() {
 
     // Получаем смещение временной зоны в минутах и преобразуем его в часы
     const timezoneOffset = now.getTimezoneOffset();
+    console.log(timezoneOffset);
     const sign = timezoneOffset > 0 ? '-' : '+'; // Определяем знак (минус для восточного времени, плюс для западного)
     const hoursOffset = Math.abs(timezoneOffset) / 60; // Переводим смещение в часы
     const offsetString = `(UTC${sign}${hoursOffset})`; // Форматируем смещение без ведущих нулей
