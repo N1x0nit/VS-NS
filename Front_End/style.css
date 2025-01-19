@@ -140,11 +140,14 @@ h1 {
 
 .Time-box{
   background-color: #fff;
-  color: #2a2a2a;
-  font-weight: 600;
-  font-size: 16px;
   padding: 0 15px 0;
   border-radius: 4px;
+}
+
+.Time-box-item{
+  font-weight: 600;
+  font-size: 16px;
+  color: #2a2a2a;
 }
 
 
