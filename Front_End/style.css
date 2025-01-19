@@ -45,50 +45,67 @@ video {
   opacity: 0.8;
 }
 
-/* Добавил */
-.transitions_tab::before {
+/* Добавил анимацию выбора меню */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+li {
+  position: relative;
+}
+.transitions_tab {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+.transitions_tab::after {
+  content: "";
+  position: absolute;
+  left: 50%;
   bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+.transitions_tab:hover::after {
+  width: 100%;
   left: 0;
 }
 
-.transitions_tab:hover::before {
-  transform: scaleX(1);
+/* Активное меню */
+
+.transitions_tab_active {
+  color: #3b9dff;
 }
 
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.transitions_tab {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  padding: 0.5rem;
-  position: relative;
-}
-
-.transitions_tab::before {
+.transitions_tab_active::after {
   content: "";
   position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
   height: 2px;
-  background: #fff;
-  border-radius: 5px;
-  transform: scaleX(0);
-  transition: all 0.6s ease;
+  background-color: white;
 }
 /* ======================== */
 
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
 nav a {
   color: white;
   text-decoration: none;
@@ -221,7 +238,3 @@ footer {
   width: 100%;
 }
 
-
-.transitions_tab_active {
-  color: #3b9dff;
-}
