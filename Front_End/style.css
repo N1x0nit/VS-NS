@@ -65,7 +65,7 @@ video {
 
 ul {
   display: flex;
-  gap: 1.2rem;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -97,7 +97,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #0080ff;
+  color: #3b9dff;
 }
 
 
@@ -219,4 +219,9 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+
+.transitions_tab_active {
+  color: #3b9dff;
 }

@@ -117,3 +117,9 @@ body {
     width: 1200px;
     font-size: 20px;
 }
+
+/* Активное меню */
+
+.transitions_tab_active {
+  color: #3b9dff;
+}

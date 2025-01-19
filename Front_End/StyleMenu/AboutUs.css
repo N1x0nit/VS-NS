@@ -136,3 +136,9 @@ body {
   .paragraf {
     color: #ffffff;
   }
+
+  /* Активное меню */
+
+  .transitions_tab_active {
+    color: #3b9dff;
+  }
