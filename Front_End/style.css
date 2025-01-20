@@ -1,3 +1,13 @@
+/* ДОбавил */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #10b981;
+  --background-color: #111827;
+  --text-color: #f3f4f6;
+  --card-background: rgba(31, 41, 55, 0.8);
+}
+/* =============================== */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,7 +17,7 @@ body {
 }
 
 header {
-  background-color: #2a2a2a;
+  /* background-color: #2a2a2a; */ /* Может так и оставить ?*/
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -22,6 +32,17 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+/* ДОбавил */
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* ========================================== */
 
 .logo img {
   margin-right: 10px;
@@ -276,7 +297,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 0 40px 0;
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .footer-block p{

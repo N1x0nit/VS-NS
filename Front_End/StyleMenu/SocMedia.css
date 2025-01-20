@@ -1,3 +1,13 @@
+/* ДОбавил */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #10b981;
+  --background-color: #111827;
+  --text-color: #f3f4f6;
+  --card-background: rgba(31, 41, 55, 0.8);
+}
+/* =============================== */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -22,6 +32,17 @@ body {
     font-weight: bold;
   }
   
+  /* ДОбавил */
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* ========================================== */
+
   .logo img {
     margin-right: 10px;
     width: 100px;
