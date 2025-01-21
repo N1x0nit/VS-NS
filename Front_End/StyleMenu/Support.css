@@ -180,6 +180,7 @@ nav a:hover {
 
 /* Стили для Часто задаваемые вопросы */
 
+/* Полная структура Таблицы */
 .faq-container {
   color: white;
   font-family: Arial, sans-serif;
@@ -191,20 +192,27 @@ nav a:hover {
   padding: 20px;
   margin-top: 50px;
   border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.222);
   
 }
+
+/*  */
 .faq-group h2 {
   text-align: left;
 }
+
+/* Один Блочек, вопрос-ответ */
 .faq-item {
   border-bottom: 1px solid #333;
   padding: 10px 0;
 }
+
+/* Кнопка(В ней вопрос) */
 .faq-question {
   width: 100%;
   background: none;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   display: flex;
   justify-content: space-between;
@@ -212,14 +220,26 @@ nav a:hover {
   padding: 0; /* Убирает внутренний отступ */
   text-align: left; /* Выравнивание текста */
 }
+
+/* Кнопка(В ней вопрос). Эфект для наведения */
+.faq-question:hover {
+  color: rgba(255, 255, 255, 0.841);
+}
+
+/* Ответ на вопрос */
 .faq-answer {
   display: none;
   text-align: left;
   margin-top: 10px;
+  color: rgba(255, 255, 255, 0.89);
 }
+
+/* Активный класс для включить/выключить */
 .faq-answer.active {
   display: block;
 }
+
+/*  */
 .icon {
   font-weight: bold;
 }
