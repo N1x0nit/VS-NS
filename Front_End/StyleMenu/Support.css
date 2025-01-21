@@ -180,3 +180,69 @@ nav a:hover {
 
 /* Стили для Часто задаваемые вопросы */
 
+/* Полная структура */
+.faq-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+/* Кнопка всех вопросов */
+.faq-taggle {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #0066cc;
+  text-align: center;
+  color: white;
+  transition: background-color 0.3s;
+  
+}
+
+.faq-taggle:hover {
+  background-color: #0080ff;
+}
+
+
+/* Блок с вопросами-ответами */
+.faq-content {
+  /* display: none;  Будем включать и выключать */
+  margin-top: 20px;
+}
+
+/* Блоко с вопросом и ответом */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+/* Вопрос */
+.faq-question {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #0066cc;
+  text-align: center;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #0080ff;
+}
+
+/* Ответ */
+.faq-answer {
+  /* display: none;  Будем включать и выключать */
+  margin-top: 10px;
+  padding-left: 15px;
+  background-color: #f9f9f9;  
+  border-left: 2px solid #007bff; 
+}
