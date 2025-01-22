@@ -18,3 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.getElementById("telegram-button").addEventListener("click", function() {
+    window.open("https://t.me/CurrencyNews_S_bot", "_blank");
+});
