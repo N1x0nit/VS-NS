@@ -231,7 +231,18 @@ nav a:hover {
   display: none;
   text-align: left;
   margin-top: 10px;
+  font-size: 14px;
   color: rgba(255, 255, 255, 0.89);
+}
+
+.Teleg-Bot {
+  color: rgba(255, 255, 255, 0.89) ;
+  margin: 0 20px;
+  font-size: 14px;
+}
+
+.Teleg-Bot:hover {
+  color: rgba(84, 82, 255, 0.89) ;
 }
 
 /* Активный класс для включить/выключить */
